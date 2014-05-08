@@ -1,3 +1,9 @@
+lightdm (1.10.1-1blankon2) tambora; urgency=low
+
+  * debian/control depends lightdm-gtk-greeter to lightdm-webkit-greeter 
+
+ -- Rahman Yusri Aftian <aftian@di.blankon.in>  Thu, 08 May 2014 23:55:03 +0000
+
 lightdm (1.10.1-1blankon1) tambora; urgency=medium
 
   * Merge Whit Sid 
