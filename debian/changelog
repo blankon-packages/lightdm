@@ -1,3 +1,19 @@
+lightdm (1.10.1-2blankon1) tambora; urgency=low
+
+  * Merge Whit sid 
+
+ -- Rahman Yusri Aftian <aftian@di.blankon.in>  Fri, 06 Jun 2014 15:45:23 +0000
+
+lightdm (1.10.1-2) unstable; urgency=medium
+
+  * debian/patches:
+    - 02_fix-apparmor-profile updated, fix chromium path in apparmor
+      abstraction profile.                                      closes: #742829
+  * debian/control:
+    - add libpam-systemd as consolekit alternative dependency.  closes: #747619
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 17 May 2014 15:31:23 +0200
+
 lightdm (1.10.1-1blankon2) tambora; urgency=low
 
   * debian/control depends lightdm-gtk-greeter to lightdm-webkit-greeter 
