@@ -1,3 +1,20 @@
+lightdm (1.10.2-1blankon1) tambora; urgency=low
+
+  * New upstream release
+
+ -- Mahyuddin <yudi.al@gmail.com>  Fri, 19 Sep 2014 20:30:38 +0700
+
+lightdm (1.10.2-1) unstable; urgency=medium
+
+  * debian/patches:
+    - 06_allow_libpamsystemd_and_ck_together dropped, ConsoleKit is now
+      deprecated (wether we're using init=systemd or not).
+  * New upstream release.
+  * debian/liblightdm-gobject-1-0.symbols:
+    - update symbol file, add lightdm_user_get_uid.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 17 Sep 2014 21:48:07 +0200
+ 
 lightdm (1.10.1-3blankon1) tambora; urgency=low
 
   * New Upstream Updates
