@@ -2,7 +2,6 @@ Source: lightdm
 Section: x11
 Priority: optional
 Maintainer: BlankOn Developers <blankon-dev@googlegroups.com>
-XSBC-Original-Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
 Uploaders: Evgeni Golov <evgeni@debian.org>, 
  Yves-Alexis Perez <corsac@debian.org>, Emanuele Rocca <ema@debian.org>, 
  Simon Huggins <huggie@earth.li>          
@@ -21,7 +20,7 @@ Package: lightdm
 Section: x11
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, 
- lightdm-webkit-greeter | lightdm-greeter, dbus, consolekit | libpam-systemd [linux-any], adduser
+ lightdm-gtk-greeter | lightdm-greeter, dbus, libpam-systemd [linux-any] |consolekit, adduser
 Recommends: xserver-xorg
 Suggests: accountsservice, upower
 Provides: x-display-manager

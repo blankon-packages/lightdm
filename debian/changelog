@@ -1,8 +1,20 @@
-lightdm (1.10.2-1blankon1) tambora; urgency=low
+lightdm (1.10.2-2blankon1) tambora; urgency=medium
 
   * New upstream release
 
- -- Mahyuddin <yudi.al@gmail.com>  Fri, 19 Sep 2014 20:30:38 +0700
+ -- Mijortsa <azis.astrojim@surabaya.di.blankon.in>  Tue, 30 Sep 2014 09:37:34 +0700
+
+lightdm (1.10.2-2) unstable; urgency=medium
+
+  * debian/patches:
+    - 05_debianize-pam-files edited, don't log an error if
+    libpam-gnome-keyring is not installed.                      closes: #683508
+  * debian/control:
+    - put lipam-systemd before consolekit in alternative.       closes: #763187
+  * debian/lightdm.postinst:
+    - make sure /var/lib/lightdm always exists.                 closes: #762218
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 28 Sep 2014 21:58:17 +0200
 
 lightdm (1.10.2-1) unstable; urgency=medium
 
@@ -14,27 +26,15 @@ lightdm (1.10.2-1) unstable; urgency=medium
     - update symbol file, add lightdm_user_get_uid.
 
  -- Yves-Alexis Perez <corsac@debian.org>  Wed, 17 Sep 2014 21:48:07 +0200
- 
-lightdm (1.10.1-3blankon1) tambora; urgency=low
-
-  * New Upstream Updates
-
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Fri, 13 Jun 2014 19:34:16 +0700
 
 lightdm (1.10.1-3) unstable; urgency=medium
 
   * debian/rules:
-    - stop installing apparmor guest profile.    closes: #747252
+    - stop installing apparmor guest profile.                   closes: #747252
   * debian/control:
     - make the libpam-systemd dependency linux-any.
 
  -- Yves-Alexis Perez <corsac@debian.org>  Wed, 11 Jun 2014 20:55:38 +0200
-
-lightdm (1.10.1-2blankon1) tambora; urgency=low
-
-  * Merge Whit sid 
-
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Fri, 06 Jun 2014 15:45:23 +0000
 
 lightdm (1.10.1-2) unstable; urgency=medium
 
@@ -45,18 +45,6 @@ lightdm (1.10.1-2) unstable; urgency=medium
     - add libpam-systemd as consolekit alternative dependency.  closes: #747619
 
  -- Yves-Alexis Perez <corsac@debian.org>  Sat, 17 May 2014 15:31:23 +0200
-
-lightdm (1.10.1-1blankon2) tambora; urgency=low
-
-  * debian/control depends lightdm-gtk-greeter to lightdm-webkit-greeter 
-
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Thu, 08 May 2014 23:55:03 +0000
-
-lightdm (1.10.1-1blankon1) tambora; urgency=medium
-
-  * Merge Whit Sid 
-
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Thu, 08 May 2014 12:48:45 +0000
 
 lightdm (1.10.1-1) unstable; urgency=medium
 
@@ -81,13 +69,6 @@ lightdm (1.10.0-3) unstable; urgency=medium
 
  -- Yves-Alexis Perez <corsac@debian.org>  Mon, 28 Apr 2014 21:15:45 +0200
 
-lightdm (1.10.0-2blankon1) tambora; urgency=medium
-
-  * New Upstream Updates
-  * Merge Whit Sid
-
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Thu, 01 May 2014 06:06:02 +0000
-
 lightdm (1.10.0-2) unstable; urgency=medium
 
   * Upload to unstable.
@@ -100,22 +81,6 @@ lightdm (1.10.0-1) experimental; urgency=medium
   * debian/watch updated to track 1.10 branch.
 
  -- Yves-Alexis Perez <corsac@debian.org>  Tue, 08 Apr 2014 22:54:47 +0200
-
-lightdm (1.9.13-1blankon1) tambora; urgency=medium
-
-  * New upstrea release
-  * Change debian/control mantainer
-  * lighdm-xsession.desktop:
-    - Exec=gnome-session-blankon
-  * 01.debian.conf:
-    - [SeatDefaults]
-    - greeter-session=lightdm-webkit-greeter 
-    - greeter-hide-users=true
-    - session-wrapper=/etc/X11/Xsession
-  * debian/patch:
-    - 02_default-greeter.patch
-
- -- Azis Ws <azis.astrojim@surabaya.di.blankon.in>  Wed, 26 Mar 2014 23:13:53 +0700
 
 lightdm (1.9.13-1) experimental; urgency=medium
 
@@ -171,6 +136,37 @@ lightdm (1.9.5-1) experimental; urgency=medium
     - rename lightdm-guest-session-wrapper to lightdm-guest-session.
 
  -- Yves-Alexis Perez <corsac@debian.org>  Sun, 29 Dec 2013 22:28:33 +0100
+
+lightdm (1.8.8-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Thu, 13 Mar 2014 09:35:36 +0100
+
+lightdm (1.8.7-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    - 03_fix-pam_chauthtok-call dropped, included upstream.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Thu, 06 Feb 2014 21:41:24 +0100
+
+lightdm (1.8.6-2) unstable; urgency=medium
+
+  * debian/patches:
+    - 03_fix-pam_chauthtok-call added, pass PAM_CHANGE_EXPIRED_AUTHTOK to the
+      pam_chauthtok() call.                                     closes: #735670
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 02 Feb 2014 14:15:27 +0100
+
+lightdm (1.8.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    - 02_fix-apparmor-profile added: remove inclusion of an AppArmor
+      abstraction not available in Debian.                      closes: #736075
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 22 Jan 2014 21:10:28 +0100
 
 lightdm (1.8.5-3) unstable; urgency=low
 
