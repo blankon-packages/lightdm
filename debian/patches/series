@@ -1,4 +1,5 @@
 01_set-default-path.patch
 02_fix-apparmor-profile.patch
 05_debianize-pam-files.patch
-99_blankon-greeter.patch
+#99_blankon-greeter.patch
+99_blankon-session.patch
