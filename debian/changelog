@@ -1,4 +1,4 @@
-lightdm (1.10.2-2blankon2.1) tambora; urgency=medium
+lightdm (1.10.2-2blankon3) tambora; urgency=medium
 
   * debian/patch:
     - remove 99_blankon-session.patch
