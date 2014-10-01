@@ -1,3 +1,10 @@
+lightdm (1.10.2-2blankon2) tambora; urgency=medium
+
+  * debian/patchs :
+    - 99_blankon-session.patch
+
+ -- mijortsa <azis.astrojim@surabaya.di.blankon.in>  Wed, 01 Oct 2014 20:00:37 +0700
+
 lightdm (1.10.2-2blankon1) tambora; urgency=medium
 
   * New upstream release
