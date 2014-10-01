@@ -1,3 +1,11 @@
+lightdm (1.10.2-2blankon2.1) tambora; urgency=medium
+
+  * debian/patch:
+    - remove 99_blankon-session.patch
+    - added 99_blankon-greeter.patch
+
+ -- mijortsa <azis.astrojim@surabaya.di.blankon.in>  Wed, 01 Oct 2014 21:34:52 +0700
+
 lightdm (1.10.2-2blankon2) tambora; urgency=medium
 
   * debian/patchs :
