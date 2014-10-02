@@ -2,3 +2,4 @@
 02_fix-apparmor-profile.patch
 05_debianize-pam-files.patch
 06_allow_libpamsystemd_and_ck_together.patch
+99_blankon-session.patch
