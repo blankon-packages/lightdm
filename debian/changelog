@@ -1,6 +1,7 @@
 lightdm (1.10.2-2blankon4) tambora; urgency=medium
 
   * No fix error 25
+  * 06_allow_libpamsystemd_and_ck_together.patch
 
  -- mijortsa <azis.astrojim@surabaya.di.blankon.in>  Wed, 01 Oct 2014 23:35:13 +0700
 
