@@ -1,9 +1,28 @@
-lightdm (1.10.2-3blankon1) tambora; urgency=medium
+lightdm (1.10.3-1blankon1) tambora; urgency=medium
 
   * New upstream release
-  * debian/patch 99_blankon-session.patch
+  * 01_debian.conf:
+    - [LightDM]
+    - start-default-seat=true 
 
- -- Azis Ws <mijortsa@localhost>  Thu, 09 Oct 2014 19:07:58 +0700
+    - [SeatDefaults]
+    - greeter-session=lightdm-webkit-greeter
+    - greeter-hide-users=true
+    - #session-wrapper=/etc/X11/Xsession
+    - user-session=blankon  
+
+ -- Azis Ws <azis.astrojim@surabaya.di.blankon.in>  Sat, 11 Oct 2014 21:19:35 +0700
+
+lightdm (1.10.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    - 04_fix-double-free-configuration-key-source dropped, included upstream.
+  * debian/upstream/signing-key.asc added, add PGP key for Robert Ancell
+    (0x18EAA1890F7C882E).
+  * debian/watch updated, add mangle option to check PGP signatures.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Thu, 09 Oct 2014 13:01:51 +0200
 
 lightdm (1.10.2-3) unstable; urgency=medium
 
