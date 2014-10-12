@@ -1,3 +1,10 @@
+lightdm (1.10.3-1blankon3) tambora; urgency=medium
+
+  * debian/patch:
+    - 99_blankon-session.patch
+
+ -- Azis Ws <azis.astrojim@surabaya.di.blankon.in>  Sun, 12 Oct 2014 20:39:05 +0700
+
 lightdm (1.10.3-1blankon2) tambora; urgency=low
 
   * lightdm-xsession.desktop 
