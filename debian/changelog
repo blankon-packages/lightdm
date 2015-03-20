@@ -1,4 +1,4 @@
-lightdm (1.10.3-3blankon1) tambora; urgency=low
+lightdm (1.10.3-3blankon2) tambora; urgency=low
 
   * FIx debian/01_debian.conf 
 
