@@ -1,3 +1,9 @@
+lightdm (1.10.3-3blankon3) tambora; urgency=low
+
+  * Use lightdm-webkit-greeter default greeter 
+
+ -- Mahyuddin <yudi.al@gmail.com>  Fri, 20 Mar 2015 21:55:35 +0700
+
 lightdm (1.10.3-3blankon2) tambora; urgency=low
 
   * FIx debian/01_debian.conf 
