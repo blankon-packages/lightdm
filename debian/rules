@@ -3,7 +3,7 @@
 LDFLAGS+=-Wl,--as-needed
 
 %:
-	dh $@ --with quilt,autoreconf,translations,systemd --parallel
+	dh $@ --with quilt,autoreconf,systemd --parallel
 
 override_dh_autoreconf:
 	NOCONFIGURE=1 dh_autoreconf ./autogen.sh
