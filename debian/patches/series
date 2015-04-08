@@ -1,6 +1,2 @@
-01_set-default-path.patch
-02_fix-apparmor-profile.patch
-03_use-desktopnames-properties.patch
-05_debianize-pam-files.patch
-06_change-user-dirs.patch
-99_blankon-session.patch
+04_language_handling.patch
+05_translate_debian_files.patch
