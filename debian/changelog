@@ -1,3 +1,10 @@
+lightdm (1.14.0-0blankon2) tambora; urgency=medium
+
+  * Disable patch 04_language_handling.patch
+  * Disable guest session
+
+ -- Mahyuddin <yudi.al@gmail.com>  Mon, 13 Apr 2015 11:28:46 +0700
+
 lightdm (1.14.0-0blankon1) tambora; urgency=medium
 
   * New upstream release
