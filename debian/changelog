@@ -1,3 +1,9 @@
+lightdm (1.14.0-5blankon2) tambora; urgency=medium
+
+  * Added debian/lightdm.conf
+
+ -- Mahyuddin <yudi.al@gmail.com>  Mon, 25 May 2015 17:00:46 +0700
+
 lightdm (1.14.0-5blankon1) tambora; urgency=medium
 
   * Upstream release

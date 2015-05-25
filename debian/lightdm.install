@@ -7,8 +7,9 @@ usr/bin
 etc/dbus-1/
 etc/lightdm/users.conf
 etc/lightdm/lightdm.conf usr/share/doc/lightdm/
-etc/lightdm/keys.conf usr/share/doc/lightdm/
+etc/lightdm/keys.conf
 etc/apparmor.d
+debian/lightdm.conf etc/lightdm
 debian/lightdm-session usr/sbin
 debian/config-error-dialog.sh usr/lib/lightdm
 debian/guest-session-auto.sh usr/lib/lightdm
