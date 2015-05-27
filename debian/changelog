@@ -1,3 +1,9 @@
+lightdm (1.14.0-5blankon3) tambora; urgency=medium
+
+  * Drop debian/lightdm.conf 
+
+ -- Mahyuddin <yudi.al@gmail.com>  Wed, 27 May 2015 14:43:53 +0700
+
 lightdm (1.14.0-5blankon2) tambora; urgency=medium
 
   * Added debian/lightdm.conf
