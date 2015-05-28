@@ -1,3 +1,11 @@
+lightdm (1.14.0-5blankon4) tambora; urgency=medium
+
+  * debian/lightdm.preinst:
+    - Add script to remove all config lightdm.conf, because conflict if
+    upgrade from suroboyo
+
+ -- Mahyuddin <yudi.al@gmail.com>  Thu, 28 May 2015 18:21:27 +0700
+
 lightdm (1.14.0-5blankon3) tambora; urgency=medium
 
   * Drop debian/lightdm.conf 
