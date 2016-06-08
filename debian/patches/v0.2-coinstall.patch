@@ -1,0 +1,67 @@
+From: Alberto Garcia <berto@igalia.com>
+Subject: Allow co-installation with grilo-plugins-0.2
+Forwarded: not-needed
+Index: grilo-plugins/configure.ac
+===================================================================
+--- grilo-plugins.orig/configure.ac
++++ grilo-plugins/configure.ac
+@@ -708,7 +708,7 @@ if test "x$enable_goa" = "xyes"; then
+ fi
+ AC_SUBST(DEPS_LUA_FACTORY_LIBS)
+ 
+-LUA_FACTORY_SOURCE_LOCATION="grilo-plugins/${LUA_FACTORY_PLUGIN_ID}"
++LUA_FACTORY_SOURCE_LOCATION="grilo-plugins-0.3/${LUA_FACTORY_PLUGIN_ID}"
+ AC_SUBST(LUA_FACTORY_SOURCE_LOCATION)
+ 
+ # ----------------------------------------------------------
+@@ -1230,7 +1230,7 @@ AC_SUBST(DEPS_OPENSUBTITLES_LIBS)
+ # ----------------------------------------------------------
+ 
+ IT_PROG_INTLTOOL([0.40.0])
+-GETTEXT_PACKAGE=grilo-plugins
++GETTEXT_PACKAGE=grilo-plugins-0.3
+ AC_SUBST(GETTEXT_PACKAGE)
+ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [The domain to use with gettext])
+ 
+Index: grilo-plugins/help/C/grilo-plugins.xml
+===================================================================
+--- grilo-plugins.orig/help/C/grilo-plugins.xml
++++ grilo-plugins/help/C/grilo-plugins.xml
+@@ -129,9 +129,9 @@
+ 
+ <para>Here is a simple example of the use of the Grilo TMDb plugin:</para>
+ 
+-<para>File: <ulink url="&url_examples_base;example-tmdb.c"><filename>example-tmdb.c</filename></ulink></para>
++<para>File: <ulink url="&url_examples_base;tmdb-example.c"><filename>tmdb-example.c</filename></ulink></para>
+ <programlisting>
+-<xi:include  href="../examples/example-tmdb.c" parse="text" xmlns:xi="http://www.w3.org/2001/XInclude"/>
++<xi:include  href="../examples/tmdb-example.c" parse="text" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+ </programlisting>
+ 
+ </sect1>
+Index: grilo-plugins/help/Makefile.am
+===================================================================
+--- grilo-plugins.orig/help/Makefile.am
++++ grilo-plugins/help/Makefile.am
+@@ -3,7 +3,7 @@ SUBDIRS = examples
+ @YELP_HELP_RULES@
+ include $(top_srcdir)/gtester.mk
+ 
+-HELP_ID = grilo-plugins
++HELP_ID = grilo-plugins-0.3
+ HELP_FILES = grilo-plugins.xml
+ HELP_EXTRA = legal.xml
+ HELP_MEDIA = ../examples/example-tmdb.c
+Index: grilo-plugins/src/lua-factory/grl-lua-factory.c
+===================================================================
+--- grilo-plugins.orig/src/lua-factory/grl-lua-factory.c
++++ grilo-plugins/src/lua-factory/grl-lua-factory.c
+@@ -1064,7 +1064,7 @@ get_lua_sources (void)
+     /* User locations */
+     l_locations = g_list_prepend (l_locations,
+                                   g_build_filename (g_get_user_data_dir (),
+-                                                    LUA_FACTORY_SOURCE_LOCATION,
++                                                    "grilo-plugins", "grl-lua-factory",
+                                                     NULL));
+   }
+ 
