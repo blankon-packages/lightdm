@@ -1,8 +1,17 @@
-lightdm (1.18.1-1blankon1) tambora; urgency=medium
+lightdm (1.18.2-1blankon1) tambora; urgency=medium
 
-  * Rebuild
+  * Set default session as blankon 
 
- -- Syai Mif <syaimif@di.blankon.in>  Wed, 08 Jun 2016 14:06:03 +0700
+ -- dotovr <dotovr@preko>  Thu, 30 Jun 2016 02:15:20 +0700
+
+lightdm (1.18.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release.
+  * debian/control:
+    - update standards version to 3.9.8.
+    - run wrap-and-sort 
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 28 Jun 2016 21:43:15 +0200
 
 lightdm (1.18.1-1) unstable; urgency=medium
 
