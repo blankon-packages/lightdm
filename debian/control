@@ -1,7 +1,8 @@
 Source: lightdm
 Section: x11
 Priority: optional
-Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Maintainer: BlankOn Developers <blankon-dev@googlegroups.com>
+XSBC-Original-Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
 Uploaders: Evgeni Golov <evgeni@debian.org>,
            Yves-Alexis Perez <corsac@debian.org>,
            Emanuele Rocca <ema@debian.org>,
@@ -14,7 +15,7 @@ Build-Depends: debhelper (>= 9),
                gtk-doc-tools,
                intltool,
                itstool,
-               libaudit-dev [linux-any],
+               libaudit-dev,
                libck-connector-dev,
                libdbus-glib-1-dev,
                libgcrypt11-dev,
