@@ -1,8 +1,23 @@
-lightdm (1.18.2-1blankon1) tambora; urgency=medium
+lightdm (1.18.2-2blankon1) tambora; urgency=medium
 
-  * Set default session as blankon 
+  * Merge with debian sid
+  * Set default user blankon
 
- -- dotovr <dotovr@preko>  Thu, 30 Jun 2016 02:15:20 +0700
+ -- dotovr <dotovr@preko>  Sat, 16 Jul 2016 20:40:58 +0700
+
+lightdm (1.18.2-2) unstable; urgency=high
+
+  * Urgency=high for the RC bug fix.
+  * debian/patches
+    - 05_debianize-pam-files added, disable autologin by default for root user
+      (as with GDM3).
+    - 07-Remove-unused-unititialized-file-descriptors-could-c added,
+      cherry-picked from upstream. Avoid closing stdin which triggers a bug in
+      dbus preventing dbus-daemon to start.                     closes: #829557
+  * debian/01_debian.conf:
+    - update section name from SeatDefaults to Seat:*.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 11 Jul 2016 13:25:07 +0200
 
 lightdm (1.18.2-1) unstable; urgency=medium
 
