@@ -1,3 +1,9 @@
+lightdm (1.18.2-2blankon2) tambora; urgency=medium
+
+  * Drop Lightdm-Xsessions.desktop.
+
+ -- Rahman Yusri Aftian <aftian@di.blankon.in>  Wed, 20 Jul 2016 09:56:39 +0700
+
 lightdm (1.18.2-2blankon1) tambora; urgency=medium
 
   * Merge with debian sid
