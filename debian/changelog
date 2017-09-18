@@ -1,3 +1,9 @@
+lightdm (1.18.3-2blankon2) uluwatu; urgency=medium
+
+  * Remove lightdm-xsession.desktop
+
+ -- AnTo SamalonA <ansamsoftdev@gmail.com>  Mon, 18 Sep 2017 20:07:12 +0800
+
 lightdm (1.18.3-2blankon1) uluwatu; urgency=medium
 
   * New upstream release
