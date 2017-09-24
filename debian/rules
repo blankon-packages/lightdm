@@ -7,7 +7,7 @@ export DEB_LDFLAGS_MAINT_APPEND=-Wl,--as-needed -Wl,-O1
 export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 
 override_dh_auto_configure:
-	dh_auto_configure -- --with-greeter-user=lightdm --with-user-session=lightdm-xsession --enable-introspection=yes --disable-silent-rules --libexecdir=/usr/lib/$(DEB_HOST_MULTIARCH)/$(DEB_SOURCE)/
+	dh_auto_configure -- --with-greeter-user=lightdm --with-user-session=blankon --enable-introspection=yes --disable-silent-rules --libexecdir=/usr/lib/$(DEB_HOST_MULTIARCH)/$(DEB_SOURCE)/
 
 override_dh_installchangelogs:
 	dh_installchangelogs -- NEWS

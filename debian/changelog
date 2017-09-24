@@ -1,3 +1,10 @@
+lightdm (1.18.3-4blankon2) uluwatu; urgency=medium
+
+  * set default user blankon
+  * 
+
+ -- Hanhan Husna <matcherapy@gmail.com>  Sun, 24 Sep 2017 20:38:57 +0700
+
 lightdm (1.18.3-4blankon1) uluwatu; urgency=medium
 
   * Rebuild new version
